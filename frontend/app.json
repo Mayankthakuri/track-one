@@ -16,7 +16,8 @@
       "infoPlist": {
         "NSLocationWhenInUseUsageDescription": "TrackOne needs access to your location to share it with your contacts",
         "NSLocationAlwaysAndWhenInUseUsageDescription": "TrackOne needs access to your location for real-time tracking"
-      }
+      },
+      "bundleIdentifier": "com.anonymous.trackone"
     },
     "android": {
       "adaptiveIcon": {
