@@ -53,6 +53,7 @@ export default function App(): React.JSX.Element {
   return (
     <NavigationContainer fallback={<ActivityIndicator />} {...({} as any)}>
       <Tab.Navigator
+        id="root"
         screenOptions={({ route }) => ({
           tabBarIcon: ({ color, size }) => {
             let iconName: keyof typeof MaterialCommunityIcons.glyphMap = 'map'
