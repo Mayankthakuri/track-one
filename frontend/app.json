@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "TrackOne",
+    "slug": "trackone",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTabletMode": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "TrackOne needs access to your location to share it with your contacts",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "TrackOne needs access to your location for real-time tracking"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow TrackOne to access your location?"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "trackone-mobile"
+      },
+      "supabase": {
+        "url": "YOUR_SUPABASE_URL",
+        "anonKey": "YOUR_SUPABASE_ANON_KEY"
+      }
+    }
+  }
+}

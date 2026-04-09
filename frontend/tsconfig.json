@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "jsx": "react-native",
+    "lib": ["es2020"],
+    "moduleResolution": "node",
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "noImplicitAny": false,
+    "target": "es2020",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "extends": "expo/tsconfig.base",
+  "exclude": ["node_modules", "build", "dist"]
+}
